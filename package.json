@@ -1,0 +1,16 @@
+{   "name": "Spring-blog"
+,   "version": "0.0.1"
+,   "private": true
+,   "author": "Hassen Taidirt <htaidirt@gmail.com>"
+,   "scripts":
+{       "start": "node app.js"
+}
+,   "dependencies":
+{       "marked": "*"
+,       "stylus": "*"
+,       "chokidar": "*"
+}
+,   "devDependencies":
+{       "mocha": "*"
+}
+}
