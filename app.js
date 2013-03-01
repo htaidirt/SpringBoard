@@ -41,8 +41,11 @@ fs.readdir('articles/', function(err, files){
              */
             fs.readFile(path, 'utf8', function(err, content){
                 if(err) throw err
-                console.log('New text >> ' + content)
-                console.log(marked(content))
+                var htmlFile = file.substring(0, file.length-2) + 'html'
+                fs.writeFile('blog/' + htmlFile, marked(content), 'utf8', function(err){
+                    if(err) throw err
+                    else console.log(htmlFile + ' was correctly written')
+                })
             })
             console.log('File ' + path + ' changed.')
         

@@ -101,5 +101,5 @@ TAGS
 #
 #############################
 
-/articles
-/blog
+articles/*
+blog/*
