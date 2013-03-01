@@ -94,3 +94,12 @@ GRTAGS
 GSYMS
 GTAGS
 TAGS
+
+#############################
+#
+#Project specific ignore
+#
+#############################
+
+/articles
+/blog
